@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry</title>
+    <!-- Tailwind CSS CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <section class="max-w-screen-xl mx-auto px-8 md:px-16 my-10">
+        <div class="bg-[#1090D81A] flex justify-between px-5 items-center rounded-lg">
+            <div class="py-3">
+                <h2 class="text-[#111111CC] text-4xl">Interactive</h2>
+            <p class="text-[#11111199] text-3xl">Geometry Genius</p>
+            </div>
+            <div>
+                <button class="bg-[#1090D8] hover:bg-[#0A71B5] px-6 py-1 rounded-md text-lg text-white font-semibold">Blog</button>
+            </div>
+        </div>
+
+        <!-- Start Card -->
+        <div class="my-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Card 01 -->
+            <div class="border-2 border-[#1111111A] hover:bg-[#FBBCED]">
+                <div class="space-y-5 px-2">
+                    <img src="./images/triangle.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
+                <h2 class="text-center text-2xl font-semibold">Triangle</h2>
+                <p class="text-center text-base text-[#414141]">Area (A) = 0.5 * b * h</p>
+                <div class="text-center">
+                    <input id="first-input" type="text" placeholder="b" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm </span> <input id="second-input" type="text" placeholder="h" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm</span>
+                    <p class="text-base text-left mt-5 text-[#414141]">Area: <span id="value-inner" class="text-xl font-bold text-red-500">0</span> <span class="text-base font-semibold">cm<sup>2</sup></span></p>
+                </div>
+                <div class="text-center pb-5">
+                    <button id="triangle-btn" class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
+                </div>
+                </div>
+            </div>
+            <!-- Card 02 -->
+            <div class="border-2 border-[#1111111A] hover:bg-[#FFD700]">
+                <div class="space-y-5 px-2">
+                    <img src="./images/rectangle.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
+                <h2 class="text-center text-2xl font-semibold">Rectangle</h2>
+                <p class="text-center text-base text-[#414141]">Area (A) = W * I </p>
+                <div class="text-center">
+                    <input type="text" placeholder="W" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm </span> <input type="text" placeholder="I" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm</span>
+                    <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                </div>
+                <div class="text-center pb-5">
+                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
+                </div>
+                </div>
+            </div>
+            <!-- Card 03 -->
+            <div class="border-2 border-[#1111111A] hover:bg-[#FF6347]">
+                <div class="space-y-5 px-2">
+                    <img src="./images/parallelogram.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
+                <h2 class="text-center text-2xl font-semibold">Parallelogram</h2>
+                <p class="text-center text-base text-[#414141]">Area (A) = b * h</p>
+                <p class="text-center text-base text-[#414141]">b =10cm, h=12cm</p>
+                <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                <div class="text-center pb-5">
+                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold mt-2">Calculate</button>
+                </div>
+                </div>
+            </div>
+            <!-- Area Card -->
+            <div class="border-2 border-[#1111111A] h-[350px] ">
+                <h2 class="text-center mt-10 underline text-xl font-semibold">Area Calculation</h2>
+            </div>
+            <!-- Card 04 -->
+            <div class="border-2 border-[#1111111A] hover:bg-[#69C7F0]">
+                <div class="space-y-5 px-2">
+                    <img src="./images/rhombus.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
+                <h2 class="text-center text-2xl font-semibold">Rhombus</h2>
+                <p class="text-center text-base text-[#414141]">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
+                <p class="text-center text-base text-[#414141]">d<sub>1</sub> =16cm, d<sub>2</sub> =8cm</p>
+                <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                <div class="text-center pb-5">
+                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
+                </div>
+                </div>
+            </div>
+            <!-- Card 05 -->
+            <div class="border-2 border-[#1111111A] hover:bg-[#7FFFD4]">
+                <div class="space-y-5 px-2">
+                    <img src="./images/pentagon.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
+                <h2 class="text-center text-2xl font-semibold">Pentagon</h2>
+                <p class="text-center text-base text-[#414141]">Area (A) = 0.5 * p * b</p>
+                <p class="text-center text-base text-[#414141]">p = 6cm, b = 10cm</p>
+                <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                <div class="text-center pb-5">
+                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
+                </div>
+                </div>
+            </div>
+            <!-- Card 06 -->
+            <div class="border-2 border-[#1111111A] hover:bg-[#D2691E]">
+                <div class="space-y-5 px-2">
+                    <img src="./images/ellipse.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
+                <h2 class="text-center text-2xl font-semibold">Ellipse</h2>
+                <p class="text-center text-base text-[#414141]">Area (A) = &pi;ab</p>
+               <p class="text-center text-base text-[#414141]">a = 10cm, b = 4cm</p>
+               <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                <div class="text-center pb-5">
+                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
+                </div>
+                </div>
+            </div>
+            <!-- Card End -->
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
