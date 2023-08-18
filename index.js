@@ -17,7 +17,8 @@ document.querySelector('#triangle-btn').addEventListener('click', function () {
     const firstInputValue = calledInputFeildById('first-input');
     const secondInputValue = calledInputFeildById('second-input');
     const triangleAreaCalculate = 0.5 * firstInputValue * secondInputValue;
-    valuePlace('value-inner', triangleAreaCalculate)
+    const twoDecimal=triangleAreaCalculate.toFixed(2);
+    valuePlace('value-inner', twoDecimal)
 })
 
 // Event Listener Rectangle
@@ -25,7 +26,8 @@ document.querySelector('#rectangle-btn').addEventListener('click', function () {
     const firstInputValue = calledInputFeildById('rectangle-first-input');
     const secondInputValue = calledInputFeildById('rectangle-second-input');
     const rectangleAreaCAlculate = firstInputValue * secondInputValue;
-    valuePlace('rectangle-value-inner', rectangleAreaCAlculate);
+    const twoDecimal=rectangleAreaCAlculate.toFixed(2);
+    valuePlace('rectangle-value-inner', twoDecimal);
 })
 
 // Evenet Listener parallelogram
@@ -33,26 +35,30 @@ document.querySelector('#parallelogram-btn').addEventListener('click', function 
     const firstInputValue = calledInputFeildById('parallelogram-first-input');
     const secondInputValue = calledInputFeildById('parallelogram-second-input');
     const parallelogramAreaCalculate = firstInputValue * secondInputValue;
-    valuePlace('parallelogram-value-inner', parallelogramAreaCalculate);
+    const twoDecimal=parallelogramAreaCalculate.toFixed(2);
+    valuePlace('parallelogram-value-inner', twoDecimal);
 })
 // Event Listener rhombus
 document.querySelector('#rhombus-btn').addEventListener('click', function () {
     const firstInputValue = calledInputFeildById('rhombus-first-input');
     const secondInputValue = calledInputFeildById('rhombus-second-input');
     const rhombusAreaCalculate = 0.5 * firstInputValue * secondInputValue;
-    valuePlace('rhombus-value-inner', rhombusAreaCalculate);
+    const twoDecimal=rhombusAreaCalculate.toFixed(2);
+    valuePlace('rhombus-value-inner', twoDecimal);
 })
 // Event Listener pentagon
 document.querySelector('#pentagon-btn').addEventListener('click', function(){
     const firstInputValue = calledInputFeildById('pentagon-first-input');
     const secondInputValue = calledInputFeildById('pentagon-second-input');
     const pentagonAreaCalculate= 0.5 * firstInputValue * secondInputValue;
-    valuePlace('pentagon-value-inner', pentagonAreaCalculate)
+    const twoDecimal=pentagonAreaCalculate.toFixed(2);
+    valuePlace('pentagon-value-inner', twoDecimal);
 })
 // Event Listener Ellipse
 document.querySelector('#ellipse-btn').addEventListener('click', function(){
     const firstInputValue = calledInputFeildById('ellipse-first-input');
     const secondInputValue = calledInputFeildById('ellipse-second-input');
     const ellipseAreaCalculate = 3.1416 * firstInputValue * secondInputValue;
-    valuePlace('ellipse-value-inner', ellipseAreaCalculate)
+    const twoDecimal=ellipseAreaCalculate.toFixed(2);
+    valuePlace('ellipse-value-inner', twoDecimal);
 })
