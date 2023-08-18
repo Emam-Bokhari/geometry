@@ -36,40 +36,42 @@
                 </div>
                 </div>
             </div>
-            <!-- Card 02 -->
+            <!-- Card 02 Rectangle-->
             <div class="border-2 border-[#1111111A] hover:bg-[#FFD700]">
                 <div class="space-y-5 px-2">
                     <img src="./images/rectangle.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
                 <h2 class="text-center text-2xl font-semibold">Rectangle</h2>
                 <p class="text-center text-base text-[#414141]">Area (A) = W * I </p>
                 <div class="text-center">
-                    <input type="text" placeholder="W" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm </span> <input type="text" placeholder="I" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm</span>
-                    <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                    <input id="rectangle-first-input" type="text" placeholder="W" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm </span> <input id="rectangle-second-input" type="text" placeholder="I" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm</span>
+                    <p class="text-base text-left mt-5 text-[#414141]">Area:<span id="rectangle-value-inner" class="text-xl font-bold text-red-500">0</span> <span class="text-base font-semibold">cm<sup>2</sup></span></p>
                 </div>
                 <div class="text-center pb-5">
-                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
+                    <button id="rectangle-btn" class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
                 </div>
                 </div>
             </div>
             <!-- Card 03 -->
-            <div class="border-2 border-[#1111111A] hover:bg-[#FF6347]">
+            <div class="border-2 border-[#1111111A] hover:bg-[#69C7F0]">
                 <div class="space-y-5 px-2">
                     <img src="./images/parallelogram.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
                 <h2 class="text-center text-2xl font-semibold">Parallelogram</h2>
                 <p class="text-center text-base text-[#414141]">Area (A) = b * h</p>
-                <p class="text-center text-base text-[#414141]">b =10cm, h=12cm</p>
-                <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                <div class="text-center">
+                    <input id="parallelogram-first-input" type="text" placeholder="b" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm </span> <input id="parallelogram-second-input" type="text" placeholder="h" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm</span>
+                    <p class="text-base text-left mt-5 text-[#414141]">Area: <span id="parallelogram-value-inner" class="text-xl font-bold text-red-500">0</span> <span class="text-base font-semibold">cm<sup>2</sup></span></p>
+                </div>
                 <div class="text-center pb-5">
-                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold mt-2">Calculate</button>
+                    <button id="parallelogram-btn" class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
                 </div>
                 </div>
             </div>
             <!-- Area Card -->
             <div class="border-2 border-[#1111111A] h-[350px] ">
-                <h2 class="text-center mt-10 underline text-xl font-semibold">Area Calculation</h2>
+                <h2 class="text-center mt-10 w-[150px] pb-1  mx-auto border-b-2 lg:border-b-[3px] border-amber-600 text-xl font-semibold">Area Calculation</h2>
             </div>
             <!-- Card 04 -->
-            <div class="border-2 border-[#1111111A] hover:bg-[#69C7F0]">
+            <div class="border-2 border-[#1111111A] hover:bg-indigo-300 ">
                 <div class="space-y-5 px-2">
                     <img src="./images/rhombus.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
                 <h2 class="text-center text-2xl font-semibold">Rhombus</h2>
@@ -110,6 +112,7 @@
             <!-- Card End -->
         </div>
     </section>
+    <script src="utilities.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
