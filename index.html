@@ -70,42 +70,48 @@
             <div class="border-2 border-[#1111111A] h-[350px] ">
                 <h2 class="text-center mt-10 w-[150px] pb-1  mx-auto border-b-2 lg:border-b-[3px] border-amber-600 text-xl font-semibold">Area Calculation</h2>
             </div>
-            <!-- Card 04 -->
+            <!-- Card 04 Rhombus -->
             <div class="border-2 border-[#1111111A] hover:bg-indigo-300 ">
                 <div class="space-y-5 px-2">
                     <img src="./images/rhombus.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
                 <h2 class="text-center text-2xl font-semibold">Rhombus</h2>
                 <p class="text-center text-base text-[#414141]">Area (A) = 0.5 * d<sub>1</sub> * d<sub>2</sub></p>
-                <p class="text-center text-base text-[#414141]">d<sub>1</sub> =16cm, d<sub>2</sub> =8cm</p>
-                <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                <div class="text-center">
+                    <input id="rhombus-first-input" type="text" placeholder="d1" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm </span> <input id="rhombus-second-input" type="text" placeholder="d2" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm</span>
+                    <p class="text-base text-left mt-5 text-[#414141]">Area: <span id="rhombus-value-inner" class="text-xl font-bold text-red-500">0</span> <span class="text-base font-semibold">cm<sup>2</sup></span></p>
+                </div>
                 <div class="text-center pb-5">
-                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
+                    <button id="rhombus-btn" class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
                 </div>
                 </div>
             </div>
-            <!-- Card 05 -->
+            <!-- Card 05 pentagon-->
             <div class="border-2 border-[#1111111A] hover:bg-[#7FFFD4]">
                 <div class="space-y-5 px-2">
                     <img src="./images/pentagon.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
                 <h2 class="text-center text-2xl font-semibold">Pentagon</h2>
                 <p class="text-center text-base text-[#414141]">Area (A) = 0.5 * p * b</p>
-                <p class="text-center text-base text-[#414141]">p = 6cm, b = 10cm</p>
-                <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                <div class="text-center">
+                    <input id="pentagon-first-input" type="text" placeholder="p" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm </span> <input id="pentagon-second-input" type="text" placeholder="b" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm</span>
+                    <p class="text-base text-left mt-5 text-[#414141]">Area: <span id="pentagon-value-inner" class="text-xl font-bold text-red-500">0</span> <span class="text-base font-semibold">cm<sup>2</sup></span></p>
+                </div>
                 <div class="text-center pb-5">
-                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
+                    <button id="pentagon-btn" class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
                 </div>
                 </div>
             </div>
             <!-- Card 06 -->
-            <div class="border-2 border-[#1111111A] hover:bg-[#D2691E]">
+            <div class="border-2 border-[#1111111A] hover:bg-lime-300">
                 <div class="space-y-5 px-2">
                     <img src="./images/ellipse.png" alt="" class="mx-auto mt-10 p-3 h-[200px]">
                 <h2 class="text-center text-2xl font-semibold">Ellipse</h2>
                 <p class="text-center text-base text-[#414141]">Area (A) = &pi;ab</p>
-               <p class="text-center text-base text-[#414141]">a = 10cm, b = 4cm</p>
-               <p class="text-base text-left mt-5 text-[#414141]">Area:</p>
+                <div class="text-center">
+                    <input id="ellipse-first-input" type="text" placeholder="a" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm </span> <input id="ellipse-second-input" type="text" placeholder="b" class="bg-[#F1F1F1] w-[80px] p-1"> <span> cm</span>
+                    <p class="text-base text-left mt-5 text-[#414141]">Area: <span id="ellipse-value-inner" class="text-xl font-bold text-red-500">0</span> <span class="text-base font-semibold">cm<sup>2</sup></span></p>
+                </div>
                 <div class="text-center pb-5">
-                    <button class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
+                    <button id="ellipse-btn" class="bg-[#1090D8] hover:bg-[#0A71B5] text-white w-full p-2 rounded-md text-lg font-semibold">Calculate</button>
                 </div>
                 </div>
             </div>
