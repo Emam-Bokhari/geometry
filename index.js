@@ -1,19 +1,5 @@
-// first function for getValue
-function calledInputFeildById(inputFeild) {
-    const firstInputFeild = document.getElementById(inputFeild);
-    const firstInputFeildValue = firstInputFeild.value;
-    const firstInputFeildValueConvert = parseFloat(firstInputFeildValue);
-    return firstInputFeildValueConvert;
-}
-
-// 2nd function for inner
-function valuePlace(element, inner) {
-    const calledElement = document.getElementById(element);
-    calledElement.innerText = inner
-}
-
 // Event Listener Triangle
-document.querySelector('#triangle-btn').addEventListener('click', function () {
+function triangle(){
     const firstInputValue = calledInputFeildById('first-input');
     const secondInputValue = calledInputFeildById('second-input');
     if(isNaN(firstInputValue) || isNaN(secondInputValue)){
@@ -22,7 +8,22 @@ document.querySelector('#triangle-btn').addEventListener('click', function () {
     const triangleAreaCalculate = 0.5 * firstInputValue * secondInputValue;
     const twoDecimal=triangleAreaCalculate.toFixed(2);
     valuePlace('value-inner', twoDecimal)
+    addToCalculationEntry('Triangle', twoDecimal)
+}
+
+document.querySelector('#triangle-btn').addEventListener('click', triangle) 
+
+document.querySelector('#first-input').addEventListener('keyup', function(event) {
+    if (event.key==='Enter') {
+        triangle()
+    }
+});
+document.querySelector('#second-input').addEventListener('keyup',function(event){
+    if(event.key==='Enter'){
+        triangle()
+    }
 })
+
 
 // Event Listener Rectangle
 document.querySelector('#rectangle-btn').addEventListener('click', function () {
@@ -34,6 +35,7 @@ document.querySelector('#rectangle-btn').addEventListener('click', function () {
     const rectangleAreaCAlculate = firstInputValue * secondInputValue;
     const twoDecimal=rectangleAreaCAlculate.toFixed(2);
     valuePlace('rectangle-value-inner', twoDecimal);
+    addToCalculationEntry('Rectangle', twoDecimal)
 })
 
 // Evenet Listener parallelogram
@@ -46,6 +48,7 @@ document.querySelector('#parallelogram-btn').addEventListener('click', function 
     const parallelogramAreaCalculate = firstInputValue * secondInputValue;
     const twoDecimal=parallelogramAreaCalculate.toFixed(2);
     valuePlace('parallelogram-value-inner', twoDecimal);
+    addToCalculationEntry('Parallelogram', twoDecimal)
 })
 // Event Listener rhombus
 document.querySelector('#rhombus-btn').addEventListener('click', function () {
@@ -57,6 +60,7 @@ document.querySelector('#rhombus-btn').addEventListener('click', function () {
     const rhombusAreaCalculate = 0.5 * firstInputValue * secondInputValue;
     const twoDecimal=rhombusAreaCalculate.toFixed(2);
     valuePlace('rhombus-value-inner', twoDecimal);
+    addToCalculationEntry('Rhombus', twoDecimal)
 })
 // Event Listener pentagon
 document.querySelector('#pentagon-btn').addEventListener('click', function(){
@@ -68,6 +72,7 @@ document.querySelector('#pentagon-btn').addEventListener('click', function(){
     const pentagonAreaCalculate= 0.5 * firstInputValue * secondInputValue;
     const twoDecimal=pentagonAreaCalculate.toFixed(2);
     valuePlace('pentagon-value-inner', twoDecimal);
+    addToCalculationEntry('Pentagon', twoDecimal)
 })
 // Event Listener Ellipse
 document.querySelector('#ellipse-btn').addEventListener('click', function(){
@@ -79,4 +84,5 @@ document.querySelector('#ellipse-btn').addEventListener('click', function(){
     const ellipseAreaCalculate = 3.1416 * firstInputValue * secondInputValue;
     const twoDecimal=ellipseAreaCalculate.toFixed(2);
     valuePlace('ellipse-value-inner', twoDecimal);
+    addToCalculationEntry('Ellipse', twoDecimal)
 })
